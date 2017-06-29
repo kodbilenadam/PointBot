@@ -29,6 +29,7 @@ module Bot
           counter += 1
         end
         message.edit(text)
+        puts "Puanlar güncellendi!"
         return
       end
     end
