@@ -4,7 +4,8 @@ module Bot
     module Puan
       extend Discordrb::Commands::CommandContainer
       command :puan do |event, *args|
-        points = JSON.parse('.data/points.json')
+        pFile = File.read('.data/points.json')
+        points = JSON.parse(pfile)
         points[args[0]] += args[1].to_i
         points.to_json 
         # Puan komutları buraya gelecek
