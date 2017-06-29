@@ -12,7 +12,11 @@ module Bot
         pFile = File.read('data/points.json')
         points = JSON.parse(pFile)
         message = event.bot.servers[327885240775475201].channels[7].load_message(329808253678518284)
-        message.edit("")
+        text = "**Puanlar**\n"
+        points.each do |key, value|
+        text += "#{key}: **#{value}**\n"
+        end
+        message.edit(text);
         return
       end
     end
