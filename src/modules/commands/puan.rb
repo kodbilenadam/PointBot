@@ -8,7 +8,7 @@ module Bot
         points = JSON.parse(pFile)
         points[args[0]] += args[1].to_i
         File.write('data/points.json', points.to_json)
-        # Puan komutları buraya gelecek
+        return
       end
     end
   end
