@@ -1,7 +1,7 @@
 module Bot
   module DiscordCommands
     # Puan ekleme bıdısı
-    module MyCommand
+    module Puan
       extend Discordrb::Commands::CommandContainer
       command :puan do |event|
         # Puan komutları buraya gelecek
