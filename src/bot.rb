@@ -2,7 +2,7 @@
 require 'bundler/setup'
 require 'discordrb'
 require 'yaml'
-
+ 
 # The main bot module.
 module Bot
   # Load non-Discordrb modules

@@ -1,0 +1,12 @@
+--- !ruby/object:OpenStruct
+table:
+  :client_id: 
+  :token: 
+  :prefix: "*"
+  :owner: 
+  :game: with Points
+  :server_id: 
+  :channel_id: 
+  :message_id: 
+  :preference: 
+modifiable: true
